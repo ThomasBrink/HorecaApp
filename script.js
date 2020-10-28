@@ -8,7 +8,7 @@
  
         function WelkDrankje(){ 
  
-        	bestelling = prompt ("Welke bestelling wilt u toevoegen? U kunt kiezen uit fris 1,-, bier 2,- of wijn 3,-"); 
+        	bestelling = prompt ("Welke bestelling wilt u toevoegen? U kunt kiezen uit fris 1,-, bier 2,- of wijn 3,- Vul snack in als u ook nog bitterballen wilt bestellen"); 
  
             if(bestelling == "fris"){ 
                 var hoeveelfris = prompt ("hoeveel fris wilt u bestellen?"); 
