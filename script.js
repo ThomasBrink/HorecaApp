@@ -7,7 +7,6 @@
 	var bitterbal
 	var antacht
 	var antzestien
-	var totaalbitter
 
  
         function WelkDrankje(){ 
