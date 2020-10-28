@@ -16,37 +16,46 @@
             if(bestelling == "fris"){ 
                 var hoeveelfris = prompt ("hoeveel fris wilt u bestellen?"); 
                 antfris = hoeveelfris * 1 
-                document.write("U heeft " + antfris + ",- aan fris");
-                document.write(linebreak);
-                WelkDrankje();
+                if(hoeveelfris != null){
+	                document.write("U heeft " + antfris + ",- aan fris");
+	                document.write(linebreak);
+	                WelkDrankje();
+	            }
+	            else{
+	            	antfris = 0;
+	            	WelkDrankje();
+	            }
             } 
  
             else if(bestelling == "bier"){ 
                 var hoeveelbier = prompt ("Hoeveel bier wilt u bestellen?"); 
                 antbier = hoeveelbier * 2
-                document.write("U heeft " + antbier + ",- aan bier");
-                document.write(linebreak);
-                WelkDrankje();
-            } 
+                if(hoeveelbier != null){
+	                document.write("U heeft " + antbier + ",- aan bier");
+	                document.write(linebreak);
+	                WelkDrankje();
+	            }
+	            else{
+	            	antbier = 0;
+	            	WelkDrankje();
+	            }
+            }
+
             else if(bestelling == "wijn"){ 
                 var hoeveelwijn = prompt ("Hoeveel wijn wilt u bestellen?"); 
                 antwijn = hoeveelwijn * 3
-                document.write("U heeft " + antwijn + ",- aan wijn");
-                document.write(linebreak);
-                WelkDrankje();
+                if(hoeveelwijn != null){
+	                document.write("U heeft " + antwijn + ",- aan wijn");
+	                document.write(linebreak);
+	                WelkDrankje();
+	            }
+	            else{
+	            	antbier = 0;
+	            	WelkDrankje();
+	            }
             } 
 
             else if(bestelling == "stop"){
-            	if(antfris == null){
-            		antfris = 0;
-            	}
-            	else if(antbier == null){
-            		antbier = 0;
-            	}
-            	else if(antwijn == null){
-            		antwijn = 0;
-            	}
-
             	totaal = antfris + antbier + antwijn + antacht + antzestien
             	document.write("Uw totaal bedrag is " + totaal +",-");
             }
@@ -69,26 +78,29 @@
 	            		if(bitterbal == "8"){
 	            			var hoeveelacht = prompt ("Hoeveel bitterbalschalen van 8 wilt u bestellen?");
                             antacht = hoeveelacht * 4
-                            document.write("U heeft " + antacht +",- aan bitterbalschalen (8) besteed");
-                            document.write(linebreak);
-                            WelkDrankje();
+                            if(hoeveelacht != null){
+	                            document.write("U heeft " + antacht +",- aan bitterbalschalen (8) besteed");
+	                            document.write(linebreak);
+	                            WelkDrankje();
+	                        }
+	                        else{
+	                        	antacht = 0;
+	                        	WelkDrankje();
+	                        }
 	            		}
 
 	            		else if(bitterbal == "16"){
 	            			var hoeveelzestien = prompt ("Hoeveel bitterbalschalen van 16 wilt u bestellen?");
                             antzestien = hoeveelzestien * 8
-                            document.write("U heeft " + antzestien + ",- aan bitterbalschalen (16) besteed");
-                            document.write(linebreak);
-                            WelkDrankje();
+                            if(hoeveelzestien != null){
+	                            document.write("U heeft " + antzestien + ",- aan bitterbalschalen (16) besteed");
+	                            document.write(linebreak);
+	                            WelkDrankje();
+	                        }
+	                        else{
+	                        	antzestien = 0;
+	                        }
 	            		}
-
-	            		else if(antacht == null){
-            			antacht = 0;
-            			}
-
-            			else if(antzestien == null){
-            			antzestien = 0;
-            			}
 
 	            		else{
 	            			alert ("Dit is een ongeldige invoer probeer opnieuw.");
