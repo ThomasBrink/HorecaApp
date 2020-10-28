@@ -17,13 +17,13 @@
                 var hoeveelfris = prompt ("hoeveel fris wilt u bestellen?"); 
                 antfris = hoeveelfris * 1 
                 if(hoeveelfris != null){
-	                document.write("U heeft " + antfris + ",- aan fris");
-	                document.write(linebreak);
-	                WelkDrankje();
+	                antfris = 0;
+	            	WelkDrankje();
 	            }
 	            else{
-	            	antfris = 0;
-	            	WelkDrankje();
+	            	document.write("U heeft " + antfris + ",- aan fris");
+	                document.write(linebreak);
+	                WelkDrankje();	            	
 	            }
             } 
  
@@ -31,13 +31,13 @@
                 var hoeveelbier = prompt ("Hoeveel bier wilt u bestellen?"); 
                 antbier = hoeveelbier * 2
                 if(hoeveelbier != null){
-	                document.write("U heeft " + antbier + ",- aan bier");
-	                document.write(linebreak);
-	                WelkDrankje();
+	                antbier = 0;
+	            	WelkDrankje();
 	            }
 	            else{
-	            	antbier = 0;
-	            	WelkDrankje();
+	            	document.write("U heeft " + antbier + ",- aan bier");
+	                document.write(linebreak);
+	                WelkDrankje();	            	
 	            }
             }
 
@@ -45,13 +45,13 @@
                 var hoeveelwijn = prompt ("Hoeveel wijn wilt u bestellen?"); 
                 antwijn = hoeveelwijn * 3
                 if(hoeveelwijn != null){
-	                document.write("U heeft " + antwijn + ",- aan wijn");
-	                document.write(linebreak);
-	                WelkDrankje();
+	                antbier = 0;
+	            	WelkDrankje();
 	            }
 	            else{
-	            	antbier = 0;
-	            	WelkDrankje();
+	            	document.write("U heeft " + antwijn + ",- aan wijn");
+	                document.write(linebreak);
+	                WelkDrankje();
 	            }
             } 
 
@@ -79,13 +79,13 @@
 	            			var hoeveelacht = prompt ("Hoeveel bitterbalschalen van 8 wilt u bestellen?");
                             antacht = hoeveelacht * 4
                             if(hoeveelacht != null){
-	                            document.write("U heeft " + antacht +",- aan bitterbalschalen (8) besteed");
-	                            document.write(linebreak);
-	                            WelkDrankje();
+	                            antacht = 0;
+	                        	WelkDrankje();
 	                        }
 	                        else{
-	                        	antacht = 0;
-	                        	WelkDrankje();
+	                        	document.write("U heeft " + antacht +",- aan bitterbalschalen (8) besteed");
+	                            document.write(linebreak);
+	                            WelkDrankje();
 	                        }
 	            		}
 
@@ -93,12 +93,13 @@
 	            			var hoeveelzestien = prompt ("Hoeveel bitterbalschalen van 16 wilt u bestellen?");
                             antzestien = hoeveelzestien * 8
                             if(hoeveelzestien != null){
-	                            document.write("U heeft " + antzestien + ",- aan bitterbalschalen (16) besteed");
-	                            document.write(linebreak);
-	                            WelkDrankje();
+	                            antzestien = 0;
+	                        	WelkDrankje();
 	                        }
 	                        else{
-	                        	antzestien = 0;
+	                        	document.write("U heeft " + antzestien + ",- aan bitterbalschalen (16) besteed");
+	                            document.write(linebreak);
+	                            WelkDrankje();	          
 	                        }
 	            		}
 
