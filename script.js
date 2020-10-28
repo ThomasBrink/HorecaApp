@@ -61,7 +61,7 @@
             	}
 
             	totaal = antfris + antbier + antwijn + antacht + antzestien
-            	document.write("Uw totaal bedrag is " + totaal +",- aan drankjes");
+            	document.write("Uw totaal bedrag is " + totaal +",-");
             }
 
             else if(bestelling == "snack"){
