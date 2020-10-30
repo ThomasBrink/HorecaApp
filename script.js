@@ -40,7 +40,7 @@
 
             else if(bestelling == "stop"){
 
-            	while(antfris == null){ //Voor als de waarde niet is ingevuld wordt de waarde 0 om totaal bedrag te berekenen om NaN tevoorkomen
+            	while(antfris == null){ //Voor als de waarde niet is ingevuld wordt de waarde 0 om totaal bedrag te berekenen dit is om NaN tevoorkomen
             		antfris = 0;
             	}
 
